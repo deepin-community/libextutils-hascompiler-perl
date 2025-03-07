@@ -8,7 +8,7 @@ Build-Depends: debhelper-compat (= 13)
 Build-Depends-Indep: libperl-dev <!nocheck>,
                      libtest-simple-perl <!nocheck>,
                      perl
-Standards-Version: 4.5.1
+Standards-Version: 4.7.0
 Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libextutils-hascompiler-perl
 Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libextutils-hascompiler-perl.git
 Homepage: https://metacpan.org/release/ExtUtils-HasCompiler
@@ -16,6 +16,7 @@ Rules-Requires-Root: no
 
 Package: libextutils-hascompiler-perl
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends},
          ${perl:Depends}
 Description: Perl Module checking the presence of a compiler
